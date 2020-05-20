@@ -26,6 +26,9 @@ gem 'devise-bootstrap-views'
 # font-awesome-rails
 gem 'font-awesome-rails'
 
+gem 'rack-timeout'
+gem 'sendgrid-ruby'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
