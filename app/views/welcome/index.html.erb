@@ -1,2 +1,9 @@
-<h1>Welcome to Photo App</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class="page-content">
+  <div class="jumbotron">
+    <h1 class="display-4">PhotoApp</h1>
+    <p class="lead" id="welcome-text">Welcome to PhotoApp!</p>
+    <hr class="my-4">
+    <p id="welcome-text">We glad to see you!</p>
+    <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-success btn-lg" %>
+  </div>
+</div>
