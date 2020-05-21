@@ -1,9 +1,13 @@
-<div class="page-content">
-  <div class="jumbotron">
-    <h1 class="display-4">PhotoApp</h1>
-    <p class="lead" id="welcome-text">Welcome to PhotoApp!</p>
-    <hr class="my-4">
-    <p id="welcome-text">We glad to see you!</p>
-    <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-success btn-lg" %>
+<% if current_user %>
+  <h3>Welcome: <%= current_user.email %>!</h3>
+<% else %>
+  <div class="page-content">
+    <div class="jumbotron">
+      <h1 class="display-4">PhotoApp</h1>
+      <p class="lead" id="welcome-text">Welcome to PhotoApp!</p>
+      <hr class="my-4">
+      <p id="welcome-text">We glad to see you!</p>
+      <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-success btn-lg" %>
+    </div>
   </div>
-</div>
+<% end %>
